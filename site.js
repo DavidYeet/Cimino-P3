@@ -33,7 +33,8 @@ const vue_app = Vue.createApp({
         return {
             // This holds your movies.json data.
             movies: [],
-        title: "IMDB + David's Top 8 Movies"
+            title: "IMDB + David's Top 8 Movies",
+            owner: "David",
       }
     },
       methods: {
