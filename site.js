@@ -35,6 +35,7 @@ const vue_app = Vue.createApp({
             movies: [],
             title: "IMDB + David's Top 8 Movies",
             owner: "David Cimino",
+            github: "https://github.com/DavidYeet",
       }
     },
       methods: {
