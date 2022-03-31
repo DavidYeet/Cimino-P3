@@ -40,47 +40,51 @@ const vue_app = Vue.createApp({
     },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
-
-              switch (dateArray) {
+            getMonthText(dateArray) {
+              let dateStr = '';
+              let month = dateArray[1];
+              let day = dateArray[2];
+              let year = dateArray[0];
+              switch (month) {
                 case 0:
-                time = "January";
+                month = "January";
                 break;
                 case 1:
-                time = "Feburary";
+                month = "Feburary";
                 break;
                 case 2:
-                time = "March";
+                month = "March";
                 break;
                 case 3:
-                time = "April";
+                month = "April";
                 break;
                 case 4:
-                time = "May";
+                month = "May";
                 break;
                 case 5:
-                day = "June";
+                month = "June";
                 break;
                 case 6:
-                time = "July";
+                month = "July";
                 break;
                 case 7:
-                time = "August";
+                month = "August";
                 break;
                 case 8:
-                time = "September";
+                month = "September";
                 break;
                 case 9:
-                time = "October";
+                month = "October";
                 break;
                 case 10:
-                time = "November";
+                month = "November";
                 break;
                 case 11:
-                time = "December";
+                month = "December";
                 break;
-              }
-              return month + " " dateArray[2] + ", " dateArray
-            }
+               }
+               return month + " " day + ", " year;
+             }
       }
 
 })
