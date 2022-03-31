@@ -46,44 +46,44 @@ const vue_app = Vue.createApp({
               let day = dateArray[2];
               let year = dateArray[0];
               switch (month) {
-                case 0:
+                case 1:
                 month = "January";
                 break;
-                case 1:
-                month = "Feburary";
-                break;
                 case 2:
-                month = "March";
+                month = "February";
                 break;
                 case 3:
-                month = "April";
+                month = "March";
                 break;
                 case 4:
-                month = "May";
+                month = "April";
                 break;
                 case 5:
-                month = "June";
+                month = "May";
                 break;
                 case 6:
-                month = "July";
+                month = "June";
                 break;
                 case 7:
-                month = "August";
+                month = "July";
                 break;
                 case 8:
-                month = "September";
+                month = "August";
                 break;
                 case 9:
-                month = "October";
+                month = "September";
                 break;
                 case 10:
-                month = "November";
+                month = "October";
                 break;
                 case 11:
+                month = "November";
+                break;
+                case 12:
                 month = "December";
                 break;
                }
-               return month + " " day + ", " year;
+               return month + " " + day + ", " + year;
              }
       }
 
