@@ -85,9 +85,8 @@ const vue_app = Vue.createApp({
                }
                return month + " " + day + ", " + year;
              }
-             // getTimeText(minutes) {
-             //
-             // }
+
+
       }
 
 })
